@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 Column Table Grid</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding-top: 70px;
+          background-color: #f5f5f5;
+          text-align: center;
+        }
+
+        h1 {
+          margin-top: 10px;
+        }
+
+        .gridWith2Col {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          max-width: 1000px;
+          margin: 40px auto;
+          background-color: white;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          border: 5px solid black; /* Border around the entire grid */
+        }
+
+        .grid-item {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+
+        .grid-item.left {
+          border-right: 2px solid #999;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          cell-pa
+        }
+
+        th, td {
+          padding: 12px;
+          border: 1px solid #ccc;
+          text-align: center;
+        }
+
+        th {
+          background-color: #f0f0f0;
+          font-weight: bold;
+        }
+
+        img {
+          max-width: 100px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Car and Phone Details</h1>
+
+<div class="gridWith2Col">
+    <!-- Left Table: Cars -->
+    <div class="grid-item left">
+        <table>
+            <thead>
+            <tr>
+                <th>CAR NAME</th>
+                <th>CAR COLOR</th>
+                <th>CAR PRICE</th>
+                <th>CAR IMAGE</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Aston Martin DB12</td>
+                <td>Matte Black</td>
+                <td>Rs. 4.5Cr - 5.2Cr</td>
+                <td>
+                    <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/158905/db12-exterior-left-side-view-3.jpeg?isig=0&q=80" alt="Car">
+                </td>
+            </tr>
+            <tr>
+                <td>Maserati GranTurismo</td>
+                <td>Gray</td>
+                <td>Rs. 2.7Cr - 3Cr</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Maserati_GranTurismo_Trofeo_1X7A0828.jpg" alt="Car">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Right Table: Phones -->
+    <div class="grid-item">
+        <table>
+            <thead>
+            <tr>
+                <th>PHONE NAME</th>
+                <th>PHONE PROCESSOR</th>
+                <th>PHONE PRICE</th>
+                <th>PHONE IMAGE</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Samsung S25 Ultra</td>
+                <td>Snapdragon® 8 Elite</td>
+                <td>Rs. 1L - 1.3L</td>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJR50_2OeTpk5i7RLT9k1JsRLNgtZA78lRw&s" alt="Phone">
+                </td>
+            </tr>
+            <tr>
+                <td>Redmagic 10 Pro 5G</td>
+                <td>Snapdragon® 8 Elite</td>
+                <td>Rs. 95,000 - 1.1L</td>
+                <td>
+                    <img src="https://mx2games.com/wp-content/uploads/2024/12/Redmagic-10-Pro-12G-256GB-Shadow-httpsmx2games.png" alt="Phone">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
