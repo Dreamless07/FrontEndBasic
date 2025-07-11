@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Concepts Practice</title>
+    <style>
+
+        body{
+        padding-top:40px;
+        }
+
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, auto);
+          gap: 0;
+          max-width: 825px;
+          margin: 0 auto;
+          border: 2px solid #17202a;
+          background-color:#bb8fce;
+        }
+
+        .grid-item {
+          border: 1px solid #17202a;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+
+        .grid-item img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        th, td {
+          padding: 12px;
+          border: 1px solid #17202a;
+          text-align: center;
+          background-color:#fad7a0;
+          font-family: Arial, sans-serif;
+        }
+
+        th {
+          background-color: #f0f0f0;
+          font-weight: bold;
+          background-color:#cd6155;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+
+    <div class="grid-item">
+        <img src="https://static.toiimg.com/thumb/msid-118945787,width-1280,height-720,resizemode-4/118945787.jpg">
+    </div>
+
+    <div class="grid-item">
+        <table>
+            <thead>
+            <tr>
+                <th>CAR NAME</th>
+                <th>CAR COLOR</th>
+                <th>CAR PRICE</th>
+                <th>CAR IMAGE</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Aston Martin DB12</td>
+                <td>Matte Black</td>
+                <td>Rs. 4.5Cr - 5.2Cr</td>
+                <td>
+                    <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/158905/db12-exterior-left-side-view-3.jpeg?isig=0&q=80">
+                </td>
+            </tr>
+            <tr>
+                <td>Maserati GranTurismo</td>
+                <td>Gray</td>
+                <td>Rs. 2.7Cr - 3Cr</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Maserati_GranTurismo_Trofeo_1X7A0828.jpg">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="grid-item">
+        <table>
+            <thead>
+            <tr>
+                <th>PHONE NAME</th>
+                <th>PHONE PROCESSOR</th>
+                <th>PHONE PRICE</th>
+                <th>PHONE IMAGE</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Samsung S25 Ultra</td>
+                <td>Snapdragon® 8 Elite</td>
+                <td>Rs. 1L - 1.3L</td>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhJR50_2OeTpk5i7RLT9k1JsRLNgtZA78lRw&s">
+                </td>
+            </tr>
+            <tr>
+                <td>Redmagic 10 Pro 5G</td>
+                <td>Snapdragon® 8 Elite</td>
+                <td>Rs. 95,000 - 1.1L</td>
+                <td>
+                    <img src="https://mx2games.com/wp-content/uploads/2024/12/Redmagic-10-Pro-12G-256GB-Shadow-httpsmx2games.png">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="grid-item">
+        <img src="https://w0.peakpx.com/wallpaper/925/170/HD-wallpaper-omen-valorant-shrouded-in-darkness-omen-valorant-valorant-games-2023-games-artstation.jpg">
+    </div>
+
+</div>
+
+</body>
+</html>
