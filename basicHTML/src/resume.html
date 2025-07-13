@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>B.E Resume</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f5f5f5;
+        }
+
+        .full-page {
+          max-width: 1000px;
+          margin: 30px auto;
+          background: #fff;
+          padding: 30px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+          text-align: center;
+        }
+
+        .photo img {
+          border-radius: 50%;
+          height: 150px;
+        }
+
+        .name h3 {
+          margin: 10px 0 5px;
+          font-size: 24px;
+        }
+
+        .body {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          gap: 30px;
+          margin-top: 20px;
+        }
+
+        .leftDiv {
+          padding-right: 20px;
+          border-right: 1px solid #ccc;
+        }
+
+        .leftDiv h3 {
+          margin-bottom: 5px;
+          color: #2e7d32;
+        }
+
+        .leftDiv h4 {
+          margin: 5px 0;
+          font-weight: normal;
+        }
+
+        .skill-list {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 5px 15px;
+          margin-top: 5px;
+        }
+
+        .rightDiv h3 {
+          margin-top: 0;
+          color: #2e7d32;
+        }
+
+        .rightDiv h4 {
+          margin: 3px 0;
+        }
+
+        .section {
+          margin-bottom: 20px;
+        }
+
+        hr {
+          margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="full-page">
+    <div class="header">
+        <div class="photo">
+            <img src="https://media.licdn.com/dms/image/v2/D4D35AQFF5Eq6-PFvkA/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1735024472173?e=1752822000&v=beta&t=JXVtZXQzjksdqUl88Gbu-0p2FQ06d9_YGngdRFYKh5s" alt="Profile Photo">
+        </div>
+        <div class="name">
+            <h3>MOHAMMAD SAAD KHAN</h3>
+        </div>
+        <hr>
+    </div>
+
+    <div class="body">
+        <!-- Left Section -->
+        <div class="leftDiv">
+            <div class="section contact">
+                <h3>CONTACT</h3>
+                <h4>Address: Karnataka, Bangalore</h4>
+                <h4>Phone: +91 8310978823</h4>
+                <h4>Email: saadkhan7903@gmail.com</h4>
+            </div>
+
+            <div class="section skills">
+                <h3>SKILLS</h3>
+                <div class="skill-list">
+                    <h4>Java</h4>
+                    <h4>Python</h4>
+                    <h4>ML</h4>
+                    <h4>OOPS</h4>
+                    <h4>DevOps</h4>
+                    <h4>HTML/CSS</h4>
+                    <h4>Databases</h4>
+                    <h4>OS</h4>
+                </div>
+            </div>
+
+            <div class="section languages">
+                <h3>LANGUAGES</h3>
+                <h4>English</h4>
+                <h4>Hindi</h4>
+            </div>
+
+            <div class="section hobbies">
+                <h3>HOBBIES</h3>
+                <h4>Sketching</h4>
+                <h4>Gaming</h4>
+                <h4>Reading</h4>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="rightDiv">
+            <div class="section education">
+                <h3>EDUCATION</h3>
+                <h4>Bachelor of Engineering in Computer Science</h4>
+                <p>Vijaya Vittala Institute of Technology, Bangalore<br>2021 – 2025 | CGPA: 8.2</p>
+            </div>
+
+            <div class="section projects">
+                <h3>PROJECTS</h3>
+                <h4>Race Car Motion Planning using CNN-based Optimization</h4>
+                <p>Built a CNN-driven optimization model to simulate and plan real-time racing strategies using reinforcement learning and the OpenAI Gym CarRacing-v0 environment.</p>
+
+                <h4>Dynamic Education Application using LLM framework</h4>
+                <p>Developed an edu-application using HTML, CSS, Python with responsive design and working AI agent using Langchain and Langraph.</p>
+            </div>
+
+            <div class="section experience">
+                <h3>EXPERIENCE</h3>
+                <h4>DevOps Engineer - Rooman DevOps Internship</h4>
+                <p>Attended Internship specializing in Development and Operations. Worked on Implementation of Virtualization and Containerization. Developed and presented a Cloud-Native application using DevOps methodologies.  .</p>
+            </div>
+
+            <div class="section certifications">
+                <h3>CERTIFICATIONS</h3>
+                <ul>
+                    <li>DevOps - IBM</li>
+                    <li>Deep Learning - Infosys</li>
+                    <li>Blockchain - Infosys</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
