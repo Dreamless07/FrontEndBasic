@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TATA STRIVE - Java Full Stack Development</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins', sans-serif;
+          background-color: #f5f7fa;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+
+        .poster {
+          width: 850px;
+          background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+          border: 2px solid black;
+          border-radius: 20px;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          position: relative;
+        }
+
+        .header {
+          background: linear-gradient(90deg, #0065a1 0%, #00a0e0 100%);
+          color: white;
+          padding: 25px 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .logo {
+          height: 60px;
+        }
+
+        .title {
+          text-align: right;
+        }
+
+        .title h1 {
+          margin: 0;
+          font-size: 28px;
+          font-weight: 700;
+        }
+
+        .title p {
+          margin: 5px 0 0;
+          font-size: 16px;
+          font-weight: 300;
+        }
+
+        .content {
+          padding: 30px 40px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 25px;
+        }
+
+        .section {
+          background-color: white;
+          border-radius: 15px;
+          padding: 20px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+          color: #0065a1;
+          font-size: 18px;
+          font-weight: 600;
+          margin-top: 0;
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+        }
+
+        .section-title i {
+          margin-right: 10px;
+          font-size: 22px;
+        }
+
+        .tech-stack {
+          grid-column: span 2;
+          background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .tech-grid {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 15px;
+        }
+
+        .tech-item {
+          background-color: white;
+          border-radius: 10px;
+          padding: 15px;
+          text-align: center;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .tech-icon {
+          width: 50px;
+          height: 50px;
+          margin: 0 auto 10px;
+          display: block;
+        }
+
+        .tech-name {
+          font-weight: 600;
+          color: #333;
+          margin: 0;
+          font-size: 14px;
+        }
+
+        .platforms {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          margin-top: 15px;
+        }
+
+        .platform {
+          background-color: #f0f4f8;
+          border-radius: 8px;
+          padding: 8px 12px;
+          font-size: 12px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+        }
+
+        .platform img {
+          width: 20px;
+          margin-right: 8px;
+        }
+
+        .ai-coach {
+          background: linear-gradient(135deg, #f0f7ff 0%, #d0e5ff 100%);
+          border: 2px solid black;
+          grid-column: span 2;
+          display: flex;
+          align-items: center;
+        }
+
+        .ai-content {
+          flex: 1;
+        }
+
+        .ai-image {
+          width: 120px;
+          margin-left: 20px;
+        }
+
+        .badge {
+          background-color: #0065a1;
+          color: white;
+          padding: 3px 10px;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: 600;
+          margin-left: 10px;
+          display: inline-block;
+        }
+
+        .footer {
+          background: linear-gradient(90deg, #0065a1 0%, #00a0e0 100%);
+          padding: 15px 40px;
+          text-align: center;
+          font-size: 12px;
+          color: #ffffff;
+        }
+
+        .highlight {
+          color: red;
+          font-weight: 600;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="poster">
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwot1e_lOLLUltjFsnGpXH9dusiA2sZgADTg&s" height="30px" width="180px" alt="TATA STRIVE Logo" class="logo">
+        <div class="title">
+            <h1>Java Full Stack Development</h1>
+            <p>Comprehensive Training Program | Generation India</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section tech-stack">
+            <h2 class="section-title"><img src="https://e7.pngegg.com/pngimages/696/504/png-clipart-computer-icons-layers-icon-design-symbol-miscellaneous-angle-thumbnail.png" width="30px" height="30px"> Full Stack Technology</h2>
+            <div class="tech-grid">
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="tech-icon">
+                    <p class="tech-name">JAVA</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVS5wOrF1fXHLGU-HDaTvt1LZG0ZF2aRmIEw&s" alt="HTML" class="tech-icon">
+                    <p class="tech-name">HTML</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdOPGrhHK13DvB6p7XR8Qlw_LOfMbRuK5Bg&s" alt="CSS" class="tech-icon">
+                    <p class="tech-name">CSS</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="Bootstrap" class="tech-icon">
+                    <p class="tech-name">BOOTSTRAP</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHR_P-7OxbDx2-EpUFbKc24Ee2jKJYms_gUw&s" alt="React" class="tech-icon">
+                    <p class="tech-name">REACT</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://images.seeklogo.com/logo-png/50/2/sql-logo-png_seeklogo-505247.png" alt="SQL" class="tech-icon">
+                    <p class="tech-name">SQL</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSpGq25dE6lFE2wad1mrklauzf0FUhbne0KlPcn1GWkn8BPAcsjb75BnLh26feMERXa9k&usqp=CAU" alt="DSA" class="tech-icon">
+                    <p class="tech-name">DATA STRUCTURE</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmP-KlGzoNvztZGDiWbRl9c62dk1dFeBOCA&s" alt="JavaScript" class="tech-icon">
+                    <p class="tech-name">JAVASCRIPT</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" alt="JavaScript" class="tech-icon">
+                    <p class="tech-name">GIT</p>
+                </div>
+                <div class="tech-item" style="border:2px solid black">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8i4zPog-0j0JR_yZglxPhTPZXxN2iMTQ3Dw&s" alt="JavaScript" class="tech-icon">
+                    <p class="tech-name">SPRINGBOOT</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="border:2px solid black">
+            <h2 class="section-title"><img src="https://icons.veryicon.com/png/o/miscellaneous/cloud-platform-2/master-control-platform.png" width="20px" height="20px"> Platforms</h2>
+            <p>Access our premium learning platforms to practice and enhance your skills:</p>
+            <div class="platforms">
+                <div class="platform">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvAhRKxWhR5kLST_MmI_xQifiXS-QqEZ9ZA&s" alt="Codecademy">
+                    Codecademy
+                </div>
+                <div class="platform">
+                    <img src="https://www.instructure.com/sites/default/files/image/2021-12/Canvas_logo_single_mark.png" alt="Canva">
+                    Canvas
+                </div>
+                <div class="platform">
+                    <img src="https://images.squarespace-cdn.com/content/v1/65cd46025ab807342db7d011/85cb3729-d128-4379-a57f-fc511e1b5496/Coach_fulllockup_mini.png?format=1500w" alt="AI Career">
+                    Chatbot
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="border:2px solid black">
+            <h2 class="section-title"><img src="https://cdn-icons-png.flaticon.com/512/2475/2475247.png" width="20px" height="20px"> Program Modules</h2>
+            <ul style="padding-left: 20px; font-size: 14px;">
+                <li>Backend Development with Java</li>
+                <li>Frontend Development with React</li>
+                <li>Database Management</li>
+                <li>Version Control with Git</li>
+                <li>Behavioral Skills</li>
+                <li>Project Management</li>
+                <li>Career Readiness</li>
+                <li>BSM (Behavioral Skills and Mindset)</li>
+            </ul>
+        </div>
+
+        <div class="section" style="border:2px solid black; grid-column: span 2;">
+            <h2 class="section-title"><img src="https://static.vecteezy.com/system/resources/previews/008/621/643/non_2x/behavioral-skills-filled-line-icon-vector.jpg" width="25px" height="25px"> Behavioral Skills and Mindset</h2>
+            <p style="font-size: 14px;">
+                BSM stands for <strong>Behavioral Skills and Mindset</strong>, a core component of our training that helps learners build confidence, discipline, communication, and problem-solving abilities. The BSM module prepares students for real-world team collaboration and personal growth.
+            </p>
+        </div>
+
+        <div class="section ai-coach">
+            <div class="ai-content">
+                <h2 class="section-title"><img src="https://cdn.prod.website-files.com/6304fb70c0d34e53d3e6efc5/660da4309e25739331235e8a_AI-Coach-Career-Village.png" width="20px" height="20px"> AI Career Coach <span class="badge">NEW</span></h2>
+                <p>Our new AI-powered chatbot helps TATA STRIVE students with:</p>
+                <ul style="padding-left: 20px; font-size: 14px;">
+                    <li>Career guidance in simple language</li>
+                    <li>Interview preparation tips</li>
+                    <li>Technical concept explanations</li>
+                    <li>Match skills to job</li>
+                </ul>
+                <p style="margin-top: 10px;"><span class="highlight">Try it now!</span> Available 24/7 for all enrolled students.</p>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="AI Career Coach" class="ai-image">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Join TATA STRIVE's Java Full Stack Program today and kickstart your tech career!</p>
+        <p>Visit <span class="highlight">www.tatastrive.com</span> for more information</p>
+    </div>
+</div>
+</body>
+</html>
